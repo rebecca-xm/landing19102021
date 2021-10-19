@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Questa è la nostra landing page</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" media="all" href="css/normalize.css" >
+        <link rel="stylesheet" media="all" href="css/common.css" >
+
+    </head>
+    <body>
+        <!--header-->
+        <header>  
+            <img src="img/logo.png" alt="Bakery" width="150" height="150">
+        </header>
+
+        <!--hero-->
+        <div id="hero"> 
+            <img src="img/top-d.jpg" width="1920" height="750" alt="Ma che sono belle queste torte">
+        </div>
+
+        <!--testo-->
+        <div id="testo">
+            <h1>Benvenuti su Bakery</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam praesentium ab distinctio saepe quibusdam. Mollitia, quas voluptatum! Voluptas officia nisi, quas libero qui quibusdam tenetur, esse veniam rerum quos vitae?</p>
+            <a href="#" class="pulsante">Contattaci</a>
+        </div>
+        
+        <!--vantaggi-->
+        <div id="vantaggi">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h2>Vantaggio 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    </p>
+                </div>
+                <div class="flex-item">
+                    <h2>Vantaggio 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--form-->
+        <div id="form">
+
+            <h2>Contattaci</h2>
+
+            <form id="mioForm" name="mioForm" action="#">
+                <div class="flex-form">
+                    <div class="inputDiv">
+                        <label for="select">Seleziona il Reparto*</label>
+                        <select name="select" id="select" required>
+                            <option value="" selected disabled hidden>Seleziona un'opzione</option>
+                            <option value="1">Commerciale</option>
+                            <option value="2">Sviluppo</option>
+                        </select>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="name">Nome e cognome *</label>
+                        <input type="text" name="name" id="name" placeholder="Scrivi qui il tuo nome e cognome" required>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="name">Email *</label>
+                        <input type="text" name="email" id="email" placeholder="Scrivi qui la tua email" required>
+                    </div>
+                    <div class="inputDiv larghezza100">
+                        <label for="name">Messaggio</label>
+                        <textarea name="testoForm" id="testoForm" placeholder="Scrivi qui il tuo messaggio"></textarea>
+                    </div>
+                    <div class="radioDiv">
+                        <p>Accettazione della privacy *</p>
+                        <label for="edit-privacy-si">Sì</label>
+                        <input type="radio" id="edit-privacy-si" name="privacy" value="si" checked> 
+                        <label for="edit-privacy-no">No</label>
+                        <input type="radio" id="edit-privacy-no" name="privacy" value="no" > 
+                    </div>
+                    <div class="inputDiv larghezza100">
+                        <input type="submit" name="submitForm" id="submitForm" value="Invia" class="pulsante">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <!--footer-->
+
+        <footer>
+
+            <p>
+                Edgemony P.Iva 12345678901 - Credits by <a href="https://www.linkedin.com/in/davidealoi/" target="_blank">Davide Aloi</a>
+            </p>
+            
+        </footer>
+    </body>
+</html>
